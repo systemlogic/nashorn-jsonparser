@@ -38,7 +38,6 @@ function wrapValuesInFunctions(map) {
 function containsObjects(array) array.length > 0 && !isSimpleValue(array[0])
 
 function parseObjectArray(array, key, type) {
-    System.out.println(typeForObjectValue(key, type));
     if (mappingToArray(key, type)) {
         return array.map(function(item) parse(
             nameOfArrayType(key, type),
